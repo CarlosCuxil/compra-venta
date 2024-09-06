@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-secondary">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="card p-4 w-350p">
+            <h2 class="text-center">Registro</h2>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label>Sexo:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="masculino" value="masculino"
+                            required>
+                        <label class="form-check-label" for="masculino">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="femenino" value="femenino"
+                            required>
+                        <label class="form-check-label" for="femenino">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="otro" value="otro" required>
+                        <label class="form-check-label" for="otro">Otro</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Ingrese su telefono" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Ingrese su correo electronico" required>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" required>
+                        <option selected>Elige el Departamento</option>
+                        <option value="Cochabamba">La Paz</option>
+                        <option value="Oruro">Oruro</option>
+                        <option value="Chuquisca">Chuquisca</option>
+                        <option value="Cochabamba">Cochabamba</option>
+                        <option value="Tarija">Tarija</option>
+                        <option value="SantaCruz">Santa Cruz</option>
+                        <option value="Beni">Beni</option>
+                        <option value="Potosi">Potosi</option>
+                        <option value="Pando">Pando</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="text" id="regUser" class="form-control" placeholder="Ingrese nombre de usuario"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" id="regPassword" class="form-control" placeholder="Ingrese contraseña"
+                        required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <input type="text" id="regUser" class="form-control my-3" placeholder="Ingrese un nombre de usuario" required>
+    <input type="password" id="regPassword" class="form-control my-3" placeholder="Ingrese su contraseña" required>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="./js/register.js"></script>
+
+
+</body>
+
+</html>
